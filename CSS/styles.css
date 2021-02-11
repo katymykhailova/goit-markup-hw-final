@@ -82,8 +82,7 @@ img {
 }
 
 .logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: block;
   font-weight: 700;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -152,7 +151,7 @@ img {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -176,18 +175,13 @@ img {
   border-radius: 4px;
 }
 
-.hero .button {
-  margin-top: 30px;
-}
-
-
 .section {
-  padding-top: 94px;
+  padding: 94px 0;
 }
 
-.work {
-  padding-bottom: 94px;
-}
+/* .work {
+  padding-bottom: 94px 0;
+} */
 
 .section-title {
   margin-top: 0;
@@ -202,6 +196,10 @@ img {
 
 .section-title {
   margin-bottom: 50px;
+}
+
+.section.feature {
+  padding-bottom: 0;
 }
 
 .feature-list, .work-list,  .team-list{
@@ -274,6 +272,10 @@ img {
   background-color: var(--dark-background-color);
 }
 
+.footer .logo {
+  margin-bottom: 20px;
+}
+
 .footer .link{
   font-style: normal;
   text-decoration: none;
@@ -286,19 +288,11 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer address {
-  margin-top: 20px;
-}
-
 .footer .item:not(:first-child) {
   margin-top: 9px;
 }
 
 /*  portfolio */
-
-.portfolio {
-  padding-bottom: 94px;
-}
 
 .portfolio-nav > .item:not(:first-child) {
   margin-left: 8px;
