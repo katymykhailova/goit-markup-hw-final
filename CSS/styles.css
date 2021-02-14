@@ -245,11 +245,12 @@ img {
 }
 
 .feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding-top: 25px;
   margin-bottom: var(--set-gap);
   background-color: var(--secondary-background-color);
-  text-align: center;
 
 }
 
