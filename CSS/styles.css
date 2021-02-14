@@ -142,7 +142,14 @@ img {
 
 .contact .link {
   color: #757575;
+  display: flex;
+  align-items: center;
 }
+
+.contact .icon {
+  margin-right: 10px;
+}
+
 
 .contact .link:hover,
 .contact .link:focus {
@@ -160,19 +167,6 @@ img {
   background-size: cover;
   text-align: center;
 }
-
-/* .hero-overlay {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  min-height: 600px;
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: #C4C4C4;
-  background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url('../images/bg_hero.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
 
 .hero-title {
   margin-top: 0;
@@ -250,31 +244,13 @@ img {
   flex-basis: calc(100% / 6 - var(--set-gap));
 }
 
-.feature-list > .item::before {
-  content: '';
-  display: block;
+.feature-icon {
   height: 120px;
+  padding-top: 25px;
   margin-bottom: var(--set-gap);
   background-color: var(--secondary-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
-}
+  text-align: center;
 
-.item-antenna::before{
-  background-image: url('../images/antenna.svg');
-}
-
-.item-clock::before{
-  background-image: url('../images/clock.svg');
-}
-
-.item-diagram::before{
-  background-image: url('../images/diagram.svg');
-}
-
-.item-astronaut::before{
-  background-image: url('../images/astronaut.svg');
 }
 
 .feature-title {
@@ -305,13 +281,13 @@ img {
 }
 
 .team-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px 30px 32px;
+  /* padding-bottom: 30px; */
 }
 
 .team-title {
   margin-top: 0;
-  margin-bottom: 0;  
+  margin-bottom: 10px;  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -320,11 +296,36 @@ img {
 }
 
 .team-text {
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.team-list-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-icon .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: var(--primary-icon-color);
+}
+
+.team-list-icon .link:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.team-list-icon .icon {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
 }
 
 .clients-list .link {
@@ -343,7 +344,7 @@ img {
 
 }
 
-.clients-icon {
+.icon {
   fill: currentColor;
 }
 
@@ -352,6 +353,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
 }
 
 .footer .logo {
@@ -370,8 +376,51 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer .item:not(:first-child) {
+.footer-address-item:not(:first-child) {
   margin-top: 9px;
+}
+
+.social {
+  margin-left: 70px;
+}
+
+.social-text {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.social-list-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-icon .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-icon .link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list-icon .icon {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
+}
+
+.social-list-icon > .item:not(:first-child) {
+  margin-left: 10px;
 }
 
 /*  portfolio */
@@ -403,10 +452,6 @@ img {
   margin-bottom: 50px;
 }
 
-/* .portfolio-card {
-  border: 1px #eeeeee solid;
-} */
-
 .portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
@@ -418,6 +463,10 @@ img {
   flex-basis: calc(100% / 3 - var(--set-gap));
   margin-left: var(--set-gap);
   margin-top: var(--set-gap);
+}
+
+.portfolio-card-set > .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-content {
