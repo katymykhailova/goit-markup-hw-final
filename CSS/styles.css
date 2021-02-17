@@ -180,11 +180,13 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   min-height: 600px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #C4C4C4;
   background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)), url('../images/bg_hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
