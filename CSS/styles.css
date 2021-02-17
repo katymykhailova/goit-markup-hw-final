@@ -476,6 +476,7 @@ img {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  outline: none;
 }
 
 .portfolio .button:hover,
@@ -536,6 +537,12 @@ img {
 .portfolio-card-thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio-overlay {
