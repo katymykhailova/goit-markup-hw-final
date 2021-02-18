@@ -507,7 +507,7 @@ img {
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.portfolio-card-set {
+.portfolio-card-set .link{
   display: block;
   cursor: pointer;
 }
