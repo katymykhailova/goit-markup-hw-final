@@ -504,12 +504,12 @@ img {
   flex-basis: calc(100% / 3 - var(--set-gap));
   margin-left: var(--set-gap);
   margin-top: var(--set-gap);
-  transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-card-set .link{
   display: block;
   cursor: pointer;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-card-set .link:hover, .portfolio-card-set .link:focus {
@@ -569,10 +569,15 @@ img {
   color: var(--primary-white-color);
 }
 
-.portfolio-card-set > .item:hover .portfolio-overlay,  
-.portfolio-card-set > .item:focus .portfolio-overlay {
+.portfolio-card-set .link:hover .portfolio-overlay, 
+.portfolio-card-set .link:focus .portfolio-overlay{
   transform: translateX(0);
 }
+
+/* .portfolio-card-set > .item:hover .portfolio-overlay,  
+.portfolio-card-set > .item:focus .portfolio-overlay {
+  transform: translateX(0);
+} */
 
 .backdrop {
   position: fixed;
