@@ -498,14 +498,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  margin-left: calc(-1 * var(--set-gap));
-  margin-top: calc(-1 * var(--set-gap));
+  margin: calc(-1 * var(--set-gap) / 2);
 }
 
 .portfolio-card-set > .item {
   flex-basis: calc(100% / 3 - var(--set-gap));
-  margin-left: var(--set-gap);
-  margin-top: var(--set-gap);
+  margin: calc(var(--set-gap) / 2);
 }
 
 .portfolio-card-set .link{
