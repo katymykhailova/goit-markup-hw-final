@@ -489,6 +489,7 @@ img {
 
 .portfolio-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -496,6 +497,7 @@ img {
 .portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
+  align-items: start;
   margin-left: calc(-1 * var(--set-gap));
   margin-top: calc(-1 * var(--set-gap));
 }
