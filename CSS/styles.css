@@ -65,7 +65,6 @@ img {
 
 .link {
   text-decoration: none;
-  outline: none;
 }
 
 .container {
@@ -393,7 +392,7 @@ img {
 
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer .logo {
@@ -417,13 +416,18 @@ img {
   margin-top: 9px;
 }
 
+.social-container {
+  display: flex;
+  padding-top: 15px;
+}
+
 .social {
   margin-left: 70px;
 }
 
 .social-text {
+  display: block;
   margin-bottom: 20px;
-  font-weight: bold;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -468,19 +472,21 @@ img {
 .sign {
   display: block;
   margin-bottom: 20px;
-  font-weight: bold;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
 .form-sign {
+  position: relative;
   display: flex;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .input-sign {
   width: 358px;
   height: 50px;
-  padding: 15px;
+  padding-left: 15px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -516,7 +522,6 @@ img {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-  outline: none;
 }
 
 .portfolio .button:hover,
@@ -634,9 +639,9 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
   width: 528px;
   margin: 0 auto;
+  padding: 40px;
   background-color: var(--primary-white-color);
   transform: translate(-50%, -50%) scale(1); 
   transition: transform 250ms var(--timing-function);
@@ -646,6 +651,9 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 30px;
   width: 30px;
   padding: 0;
@@ -654,6 +662,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-white-color);
   cursor: pointer;
+  transition: color 250ms var(--timing-function);
+}
+
+.close-btn:hover {
+  color: var(--accent-color);
 }
 
 .close-btn .icon {
@@ -669,3 +682,112 @@ img {
 .backdrop.is-hidden .modal{
   transform: translate(-50%, -50%) scale(1.1); 
 }
+
+.form-modal {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-input {
+  position: relative;
+}
+
+.form-caption {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-field .icon {
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+
+.modal-label {
+  margin-bottom: 4px;
+}
+
+.modal-input, .modal-textarea {
+  width: 100%;
+  padding: 11px 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-textarea {
+  padding-left: 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.modal-textarea::placeholder{
+  color: rgba(117, 117, 117, 0.5)
+}
+
+.policy-container {
+  text-align: center;
+}
+
+.policy-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+.policy-label > .link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.btn-modal {
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);; 
+}
+
+.btn-modal:hover {
+  cursor: pointer;
+}
+
+.modal-input:focus, .modal-textarea:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal-input:focus + .icon {
+  fill: var(--accent-color);
+}
+
+.checkbox-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+}
+
+.policy-checkbox:checked + .checkbox-icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url('../images/check.svg');
+  background-size: contain;
+  background-origin: border-box;
+} 
