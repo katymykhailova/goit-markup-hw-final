@@ -429,7 +429,9 @@ img {
 
 .social-text {
   display: block;
+  margin-top: 0;
   margin-bottom: 20px;
+  font-weight: bold;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -469,7 +471,9 @@ img {
 
 .sign {
   display: block;
+  margin-top: 0;
   margin-bottom: 20px;
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
