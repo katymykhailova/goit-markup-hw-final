@@ -55,6 +55,7 @@ img {
 
 .icon {
   fill: currentColor;
+  transition: fill 250ms var(--timing-function);
 }
 
 .list {
