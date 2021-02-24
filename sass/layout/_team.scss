@@ -1,0 +1,66 @@
+.team__list{
+  @include grid($set-gap)
+}
+
+.team__item {
+  @include grid-item($set-gap, 4);
+  background-color: $primary-white-color;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $secondary-background-color;
+}
+
+.team__thumb {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team__content {
+  padding: 30px 32px 30px 32px;
+}
+
+.team__title {
+  margin-top: 0;
+  margin-bottom: 10px;  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.team__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  color: $primary-icon-color;
+  transition: color 250ms $timing-function, background-color 250ms $timing-function;
+  
+  &:hover, &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;}
+}
+
+.team-social-list__icon {
+  height: 20px;
+  width: 20px;
+}
+

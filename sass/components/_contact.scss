@@ -1,0 +1,31 @@
+.contact-header  {
+  display: flex;
+}
+
+.contact-header__link {
+  @include flexbox();
+  color: $primary-text-color;
+
+  &:hover, &:focus{
+      color: $accent-color;}
+
+}
+
+.contact-header__icon {
+  margin-right: 10px;
+}
+
+.contact-footer__link {
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $timing-function;
+
+  &:hover, &:focus {
+    color: $primary-white-color;}
+
+}
+
+.contact-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}

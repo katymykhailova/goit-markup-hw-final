@@ -1,0 +1,30 @@
+.feature__list{
+  @include grid($set-gap)
+}
+
+.feature__item {
+  @include grid-item($set-gap, 4);
+}
+
+.feature__icon {
+  @include flexbox($justify: center);
+  height: 120px;
+  margin-bottom: $set-gap;
+  background-color: $secondary-background-color;
+}
+
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 0;  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.feature__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.71;
+}

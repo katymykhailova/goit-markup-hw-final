@@ -1,0 +1,26 @@
+.specialization__list{
+  @include grid($set-gap)
+}
+
+.specialization__item {
+  @include grid-item($set-gap, 3)
+}
+
+.specialization__thumb {
+  position: relative;
+}
+
+.specialization__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include flexbox($justify: center)
+  height: 70px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

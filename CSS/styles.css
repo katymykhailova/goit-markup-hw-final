@@ -117,7 +117,7 @@ img {
   margin-left: 93px;
 }
 
-.site-nav__link , .contact__link{
+.site-nav__link , .contact-header__link{
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -141,7 +141,7 @@ img {
   color: var(--accent-color);
 }
 
-.site-nav__item:not(:last-child),  .contact__item:not(:last-child){
+.site-nav__item:not(:last-child),  .contact-header__item:not(:last-child){
   margin-right: 50px;
 }
 
@@ -157,22 +157,22 @@ img {
   background-color: var(--accent-color);
 }
 
-.contact  {
+.contact-header  {
   display: flex;
 }
 
-.contact__link {
+.contact-header__link {
   color: #757575;
   display: flex;
   align-items: center;
 }
 
-.contact__icon {
+.contact-header__icon {
   margin-right: 10px;
 }
 
-.contact__link:hover,
-.contact__link:focus {
+.contact-header__link:hover,
+.contact-header__link:focus {
   color: var(--accent-color);
 }
 
@@ -225,6 +225,10 @@ img {
   padding: 94px 0;
 }
 
+.section--not-pdb {
+  padding-bottom: 0;
+}
+
 .section__title {
   margin-top: 0;
   font-weight: 700;
@@ -236,21 +240,15 @@ img {
   margin-bottom: 50px;
 }
 
-.section.feature {
-  padding-bottom: 0;
-}
-
 .feature__list, .specialization__list,  .team__list, .clients__list{
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--set-gap));
-  margin-left: calc(-1 * var(--set-gap));
+  margin: calc(-1 * var(--set-gap) / 2);
 }
 
 .feature__item,  .specialization__item, .team__item, .clients__item {
   flex-basis: calc(100% / 3 - var(--set-gap));
-  margin-top: var(--set-gap);
-  margin-left: var(--set-gap);
+  margin: calc(var(--set-gap) / 2);
 }
 
 .team__item, .feature__item {
@@ -400,19 +398,19 @@ img {
   margin-bottom: 20px;
 }
 
-.address__link {
+.contact-footer__link {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
 }
 
-.address__link:hover,
-.address__link:focus {
+.contact-footer__link:hover,
+.contact-footer__link:focus {
   color: var(--primary-white-color);
 }
 
-.address__item:not(:last-child) {
+.contact-footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -626,6 +624,7 @@ img {
 
 .modal {
   position: absolute;
+  z-index: 1000;
   top: 50%;
   left: 50%;
   width: 528px;
