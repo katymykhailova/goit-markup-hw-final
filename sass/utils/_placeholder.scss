@@ -1,31 +1,16 @@
-.icon {
+%icon {
   fill: currentColor;
   transition: fill 250ms $timing-function;
 }
 
-.list {
+%list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.link {
+%link {
   text-decoration: none;
-}
-
-.button {
-  display: inline-flex;
-  padding: 10px 32px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  background-color: $accent-color;
-  color: $primary-white-color;
-  border: 0;
-  border-radius: 4px;
 }
 
 %button {
@@ -41,4 +26,25 @@
   color: $primary-white-color;
   border: 0;
   border-radius: 4px;
+
+  &:hover {cursor: pointer;}
+
+}
+
+%input {
+  width: 100%;
+  padding: 11px 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+%nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;  
+  color: $title-text-color;
+  transition: color 250ms $timing-function;
 }

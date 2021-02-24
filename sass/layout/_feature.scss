@@ -1,5 +1,6 @@
 .feature__list{
-  @include grid($set-gap)
+  @include grid($set-gap);
+  @extend %list;
 }
 
 .feature__item {

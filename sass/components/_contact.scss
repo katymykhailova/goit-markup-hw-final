@@ -1,9 +1,16 @@
 .contact-header  {
+  @extend %list;
   display: flex;
+}
+
+.contact-header__item:not(:last-child){
+  margin-right: 50px;
 }
 
 .contact-header__link {
   @include flexbox();
+  @extend %link;
+  @extend %nav-link;
   color: $primary-text-color;
 
   &:hover, &:focus{
@@ -12,10 +19,16 @@
 }
 
 .contact-header__icon {
+  @extend %icon;
   margin-right: 10px;
 }
 
+.contact-footer__list {
+  @extend %list;
+}
+
 .contact-footer__link {
+  @extend %link;
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);

@@ -1,5 +1,6 @@
 .team__list{
-  @include grid($set-gap)
+  @include grid($set-gap);
+  @extend %list;
 }
 
 .team__item {
@@ -37,30 +38,5 @@
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.team-social-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.team-social-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  color: $primary-icon-color;
-  transition: color 250ms $timing-function, background-color 250ms $timing-function;
-  
-  &:hover, &:focus {
-    color: $primary-white-color;
-    background-color: $accent-color;}
-}
-
-.team-social-list__icon {
-  height: 20px;
-  width: 20px;
 }
 

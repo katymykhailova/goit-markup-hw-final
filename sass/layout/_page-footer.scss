@@ -6,9 +6,7 @@
 }
 
 .page-footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @include flexbox(baseline, space-between);
 }
 
 .sign__caption {
@@ -39,11 +37,13 @@
 
 .form-sign__btn {
   @include flexbox($justify: center);
+  @extend %button;
   margin-left: 12px;
   padding: 10px 28px;
 }
 
 .form-sign__icon {
+  @extend %icon;
   margin-left: 10px;
   width: 24px;
   height: 24px;
