@@ -1,11 +1,11 @@
-.page-footer {
+.footer {
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $dark-background-color;
 }
 
-.page-footer__container {
+.footer__container {
   @include flexbox(baseline, space-between);
 }
 

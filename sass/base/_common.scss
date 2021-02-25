@@ -22,7 +22,7 @@ img {
   height: auto;
 }
 
-.button {
+.hero__button {
   @extend %button;
 
   &:hover {
