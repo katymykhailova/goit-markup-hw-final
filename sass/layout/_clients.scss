@@ -8,7 +8,7 @@
 }
 
 .clients__link {
-  @include flexbox($justify: center);
+  @include flexbox(flex-start, center);
   padding-top: 20px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
