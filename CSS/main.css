@@ -4,7 +4,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feature__list, .specialization__list, .team__list, .clients__list, .portfolio-nav, .portfolio, .site-nav, .contact-header, .contact-footer__list, .social, .teamsocial {
+.feature__list, .specialization__list, .team__list, .clients__list, .projectfilter, .portfolio, .site-nav, .contact-header, .contact-footer__list, .social, .teamsocial {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -14,7 +14,7 @@
   text-decoration: none;
 }
 
-.hero__button, .form-sign__btn, .portfolio-nav__btn, .form-modal__btn {
+.hero__button, .form-sign__btn, .projectfilter__btn, .form-modal__btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -31,7 +31,7 @@
   border-radius: 4px;
 }
 
-.hero__button:hover, .form-sign__btn:hover, .portfolio-nav__btn:hover, .form-modal__btn:hover {
+.hero__button:hover, .form-sign__btn:hover, .projectfilter__btn:hover, .form-modal__btn:hover {
   cursor: pointer;
 }
 
@@ -425,7 +425,7 @@ img {
   height: 24px;
 }
 
-.portfolio-nav {
+.projectfilter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,11 +440,11 @@ img {
   margin-bottom: 50px;
 }
 
-.portfolio-nav__item:not(:last-child) {
+.projectfilter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-nav__btn {
+.projectfilter__btn {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -458,7 +458,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-nav__btn:hover, .portfolio-nav__btn:focus, .portfolio-nav__btn--current {
+.projectfilter__btn:hover, .projectfilter__btn:focus, .projectfilter__btn--current {
   background-color: #2196F3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

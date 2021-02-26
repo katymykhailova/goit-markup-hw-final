@@ -1,15 +1,15 @@
-.portfolio-nav {
+.projectfilter {
   @include flexbox($justify: center);
   @extend %list;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
-.portfolio-nav__item:not(:last-child) {
+.projectfilter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-nav__btn {
+.projectfilter__btn {
   @extend %button;
   padding: 6px 22px;
   font-weight: 500;
