@@ -1,22 +1,32 @@
 .team__list{
-  @include grid($set-gap);
   @extend %list;
+  @media screen and (min-width: 768px) {
+    @include grid($set-gap);}
 }
 
 .team__item {
-  @include grid-item($set-gap, 4);
   background-color: $primary-white-color;
+  
+  @media screen and (max-width: 767px) {
+    &:not(:last-child){margin-bottom: 30px;}}
+
+  @media screen and (min-width: 768px) {
+    @include grid-item($set-gap, 2);}
+
+  @media screen and (min-width: 1200px) {
+    @include grid-item($set-gap, 4);}
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: $secondary-background-color;
 }
 
 .team__thumb {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;}
 }
 
 .team__content {

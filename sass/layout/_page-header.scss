@@ -5,9 +5,31 @@
 }
 
 .header__container {
-  @include flexbox(center, space-between);
+  @media screen and (min-width: 768px) {
+    @include flexbox(center, space-between);}
+
 }
 
 .header__nav {
   @include flexbox();
+
+  flex-grow: 1;
+  
+  min-height: 60px;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;}
+  
+}
+
+.heade__button {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  height: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: none;}
+  
 }

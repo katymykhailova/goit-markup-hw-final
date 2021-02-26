@@ -1,3 +1,8 @@
+.specialization {
+  @media screen and (max-width: 1199px) {
+    display: none;}
+}
+
 .specialization__list{
   @include grid($set-gap);
   @extend %list;

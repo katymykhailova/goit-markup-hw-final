@@ -1,10 +1,26 @@
+.feature {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;}
+}
+
 .feature__list{
-  @include grid($set-gap);
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    @include grid($set-gap);}
+  
 }
 
 .feature__item {
-  @include grid-item($set-gap, 4);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child){margin-bottom: 30px;}}
+  
+    @media screen and (min-width: 768px) {
+    @include grid-item($set-gap, 2);}
+
+  @media screen and (min-width: 1200px) {
+    @include grid-item($set-gap, 4);}
+  
 }
 
 .feature__icon {
@@ -12,6 +28,7 @@
   height: 120px;
   margin-bottom: $set-gap;
   background-color: $secondary-background-color;
+
 }
 
 .feature__title {
@@ -22,6 +39,11 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
 }
 
 .feature__text {

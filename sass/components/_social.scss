@@ -7,11 +7,23 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-white-color;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;}
+}
+
+.social-wrap {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;}
 }
 
 .social {
   @include flexbox($justify: space-between);
   @extend %list;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 206px;
+    margin: 0 auto;}
 }
 
 .social__link {
@@ -42,6 +54,10 @@
 .teamsocial {
   @include flexbox($justify: space-between);
   @extend %list;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 206px;
+    margin: 0 auto;}
 }
 
 .teamsocial__link {

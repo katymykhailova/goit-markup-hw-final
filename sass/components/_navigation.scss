@@ -1,13 +1,27 @@
 .site-nav {
   @extend %list;
   display: flex;
-  margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+    display: none;}
+
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    flex-grow: 1;
+    justify-content: center;}
+    
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;}
+
 }
 
 .site-nav__link {
   @extend %nav-link;
   @extend %link;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;}
 
   &:hover,
   &:focus {

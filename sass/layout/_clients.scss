@@ -5,6 +5,16 @@
 
 .clients__item {
   @include grid-item($set-gap, 6);
+
+  @media screen and (max-width: 767px) {
+    @include grid-item($set-gap, 2);}
+
+  @media screen and (min-width: 768px) {
+    @include grid-item($set-gap, 3);}
+
+  @media screen and (min-width: 1200px) {
+    @include grid-item($set-gap, 6);}
+  
 }
 
 .clients__link {

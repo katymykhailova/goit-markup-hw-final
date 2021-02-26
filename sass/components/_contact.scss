@@ -1,10 +1,19 @@
 .contact-header  {
   @extend %list;
-  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;}
+
+  @media screen and (min-width: 1200px) {
+    display: flex;}
 }
 
 .contact-header__item:not(:last-child){
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;}
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;}
 }
 
 .contact-header__link {
@@ -13,14 +22,24 @@
   @extend %nav-link;
   color: $primary-text-color;
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;}
+
   &:hover, &:focus{
-      color: $accent-color;}
+    color: $accent-color;}
 
 }
 
 .contact-header__icon {
   @extend %icon;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+.contact-footer {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;}
 }
 
 .contact-footer__list {

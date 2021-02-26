@@ -21,10 +21,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-.hero__button {
-  @extend %button;
-
-  &:hover {
-    cursor: pointer;}
-}
