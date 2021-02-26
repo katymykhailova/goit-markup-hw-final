@@ -24,6 +24,19 @@
           <a href="./" class="logo"
             >Web<span class="logo__white-theme">Studio</span></a
           >
+          <button type="button" class="heade__button">
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="heade__icon"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
@@ -64,25 +77,27 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="projectfilter">
-            <li class="projectfilter__item">
-              <button class="projectfilter__btn projectfilter__btn--current">
-                Все
-              </button>
-            </li>
-            <li class="projectfilter__item">
-              <button class="projectfilter__btn">Веб-сайты</button>
-            </li>
-            <li class="projectfilter__item">
-              <button class="projectfilter__btn">Приложения</button>
-            </li>
-            <li class="projectfilter__item">
-              <button class="projectfilter__btn">Дизайн</button>
-            </li>
-            <li class="projectfilter__item">
-              <button class="projectfilter__btn">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="filter-wrap">
+            <ul class="projectfilter">
+              <li class="projectfilter__item">
+                <button class="projectfilter__btn projectfilter__btn--current">
+                  Все
+                </button>
+              </li>
+              <li class="projectfilter__item">
+                <button class="projectfilter__btn">Веб-сайты</button>
+              </li>
+              <li class="projectfilter__item">
+                <button class="projectfilter__btn">Приложения</button>
+              </li>
+              <li class="projectfilter__item">
+                <button class="projectfilter__btn">Дизайн</button>
+              </li>
+              <li class="projectfilter__item">
+                <button class="projectfilter__btn">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
           <ul class="portfolio">
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
@@ -323,7 +338,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="social-wrap">
           <p class="social__caption">Присоединяйтесь</p>
           <ul class="social">
             <li class="social__item">

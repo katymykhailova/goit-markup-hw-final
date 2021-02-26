@@ -1,12 +1,25 @@
+.filter-wrap {
+  padding-bottom: 50px;
+}
+
 .projectfilter {
   @include flexbox($justify: center);
   @extend %list;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin: calc(-15px / 2);}
+}
+
+.projectfilter__item {
+  @media screen and (max-width: 767px) {
+    margin: calc(15px / 2);}
 }
 
 .projectfilter__item:not(:last-child) {
-  margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;}
 }
 
 .projectfilter__btn {
@@ -27,16 +40,28 @@
     color: $primary-white-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
 
-  }
+}
 
 .portfolio {
-  @include grid($set-gap);
   @extend %list;
-  align-items: start;
+  // align-items: start;
+  @media screen and (min-width: 768px) {
+    @include grid($set-gap);}
+  
 }
 
 .portfolio__item {
-  @include grid-item($set-gap, 3)
+  
+  @media screen and (max-width: 767px) {
+    &:not(:last-child){margin-bottom: 30px;}}
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    @include grid-item($set-gap, 2);}
+
+  @media screen and (min-width: 1200px) {
+    @include grid-item($set-gap, 3);}
+
 }
 
 .portfolio__link{
@@ -45,12 +70,20 @@
   cursor: pointer;
   transition: box-shadow 250ms $timing-function;
 
+  @media screen and (min-width: 768px) {
+    display: flex;  
+    flex-direction: column;}
+
   &:hover, &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 
 }
 
 .portfolio__content {
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;}
+
   padding: 20px 24px 20px 24px;
   border-left: 1px #eeeeee solid;
   border-right: 1px #eeeeee solid;
@@ -76,6 +109,8 @@
 .project {
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;}
 }
 
 .project__image {
@@ -95,9 +130,8 @@
   transition: transform 250ms $timing-function;
 
   .portfolio__link:hover &, 
-  .portfolio__link:focus &{
-    transform: translateX(0);
-}
+  .portfolio__link:focus & {
+    transform: translateX(0);}
 
 }
 
