@@ -11,6 +11,6 @@
 }
 
 @mixin grid-item($margin, $qty) {
-  flex-basis: $container-width / $qty - $margin;
+  flex-basis: calc(100% / #{$qty} - #{$margin});
   margin: $margin / 2;
 }

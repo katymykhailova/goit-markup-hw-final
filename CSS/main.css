@@ -192,8 +192,8 @@ img {
 }
 
 .feature__item {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+  -ms-flex-preferred-size: calc(100% / 4 - 30px);
+      flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
 }
 
@@ -238,8 +238,8 @@ img {
 }
 
 .specialization__item {
-  -ms-flex-preferred-size: 370px;
-      flex-basis: 370px;
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
 }
 
@@ -280,8 +280,8 @@ img {
 }
 
 .team__item {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+  -ms-flex-preferred-size: calc(100% / 4 - 30px);
+      flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
   background-color: #ffffff;
 }
@@ -329,8 +329,8 @@ img {
 }
 
 .clients__item {
-  -ms-flex-preferred-size: 170px;
-      flex-basis: 170px;
+  -ms-flex-preferred-size: calc(100% / 6 - 30px);
+      flex-basis: calc(100% / 6 - 30px);
   margin: 15px;
 }
 
@@ -478,8 +478,8 @@ img {
 }
 
 .portfolio__item {
-  -ms-flex-preferred-size: 370px;
-      flex-basis: 370px;
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
 }
 
