@@ -1,9 +1,9 @@
 .site-nav {
   @extend %list;
-  display: flex;
+  // display: flex;
 
-  @media screen and (max-width: 767px) {
-    display: none;}
+  @media screen and (min-width: 768px) {
+    display: flex;}
 
   @media screen and (min-width: 481px) and (max-width: 1199px) {
     flex-grow: 1;
@@ -30,19 +30,38 @@
   &--current {
     color: $accent-color;}
 
-  &--current::after {
-    left: 0;
-    position: absolute;
-    bottom: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $accent-color;}
+  @media screen and (min-width: 768px) {
+      &--current::after {
+      left: 0;
+      position: absolute;
+      bottom: 0;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $accent-color;}}
 
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+.site-nav__item {
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;}
+
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;}}
+}
+
+.header__icon-cross{
+  display: none;
+}
+
+.header__button.is-open .header__icon-cross{
+  display: block;
+}
+
+.header__button.is-open .header__icon-menu{
+  display: none;
 }
