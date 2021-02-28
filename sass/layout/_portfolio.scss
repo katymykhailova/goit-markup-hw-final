@@ -44,7 +44,6 @@
 
 .portfolio {
   @extend %list;
-  // align-items: start;
   @media screen and (min-width: 768px) {
     @include grid($set-gap);}
   
