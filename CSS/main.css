@@ -232,7 +232,7 @@ img {
   margin: 0;
   background-color: transparent;
   height: 40px;
-  z-index: 500;
+  z-index: 1001;
 }
 
 @media screen and (min-width: 768px) {
