@@ -885,8 +885,18 @@ img {
   position: absolute;
   left: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   width: 100%;
+  padding: 0 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -903,11 +913,18 @@ img {
 }
 
 .project__meta {
-  padding: 63px 24px;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
   margin: 0;
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
+}
+
+.portfolio__link:hover .project__meta,
+.portfolio__link:focus .project__meta {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .logo {
