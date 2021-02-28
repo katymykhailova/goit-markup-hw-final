@@ -25,17 +25,15 @@
   @media screen and (min-width: 480px){
     max-width: 450px;}
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     position: absolute;
     z-index: 2000;
     top: 50%;
     left: 50%;
+     max-width: 528px;
     transform: translate(-50%, -50%) scale(1); 
     transition: transform 250ms $timing-function;}
 
-  @media screen and (min-width: 1200px) {
-    max-width: 528px;}
-  
 }
 
 .close-btn {
@@ -72,7 +70,8 @@
 }
 
 .backdrop.is-hidden .modal{
-  transform: translate(-50%, -50%) scale(1.1); 
+  @media screen and (min-width: 1200px) {
+    transform: translate(-50%, -50%) scale(1.1);} 
 }
 
 .form-modal {
