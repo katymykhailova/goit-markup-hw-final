@@ -137,6 +137,7 @@
 }
 
 .project__meta {
+  
   transform: translateY(150%);
   margin: 0;
   font-size: 18px;
@@ -146,5 +147,9 @@
   .portfolio__link:hover &, 
   .portfolio__link:focus & {
     transform: translateY(0);}
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;}
+
   
 }

@@ -104,11 +104,13 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <h1 class="hero__title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button class="hero__button" data-modal-open>Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button class="hero__button" data-modal-open>Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Преимущества -->
@@ -214,37 +216,19 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/team1.jpg    1x,
-                      ./images/team1@2x.jpg 2x,
-                      ./images/team1.webp   1x
-                    "
-                    media="(min-width:1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team1t.jpg    1x,
-                      ./images/team1t@2x.jpg 2x,
-                      ./images/team1t.webp   1x
-                    "
-                    media="(min-width:768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team1m.jpg    1x,
-                      ./images/team1m@2x.jpg 2x,
-                      ./images/team1m.webp   1x
-                    "
-                    media="(min-width:480px)"
-                    type="image/webp"
-                  />
-                  <img src="./images/team1m.jpg" alt="Первый член команды" />
-                </picture>
-
+                <img
+                  srcset="
+                    ./images/team1.jpg     270w,
+                    ./images/team1t.jpg    354w,
+                    ./images/team1m.jpg    450w,
+                    ./images/team1@2x.jpg  540w,
+                    ./images/team1t@2x.jpg 708w,
+                    ./images/team1m@2x.jpg 900w
+                  "
+                  src="./images/team1m.jpg"
+                  alt="Первый член команды"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <div class="team__content">
                   <h3 class="team__title">Игорь Демьяненко</h3>
                   <p class="team__text">Product Designer</p>
@@ -291,36 +275,19 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/team2.jpg    1x,
-                      ./images/team2@2x.jpg 2x,
-                      ./images/team2.webp   1x
-                    "
-                    media="(min-width:1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team2t.jpg    1x,
-                      ./images/team2t@2x.jpg 2x,
-                      ./images/team2t.webp   1x
-                    "
-                    media="(min-width:768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team2m.jpg    1x,
-                      ./images/team2m@2x.jpg 2x,
-                      ./images/team2m.webp   1x
-                    "
-                    media="(min-width:480px)"
-                    type="image/webp"
-                  />
-                  <img src="./images/team2m.jpg" alt="Первый член команды" />
-                </picture>
+                <img
+                  srcset="
+                    ./images/team2.jpg     270w,
+                    ./images/team2t.jpg    354w,
+                    ./images/team2m.jpg    450w,
+                    ./images/team2@2x.jpg  540w,
+                    ./images/team2t@2x.jpg 708w,
+                    ./images/team2m@2x.jpg 900w
+                  "
+                  src="./images/team2m.jpg"
+                  alt="Второй член команды"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <div class="team__content">
                   <h3 class="team__title">Ольга Репина</h3>
                   <p class="team__text">Frontend Developer</p>
@@ -367,36 +334,19 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/team3.jpg    1x,
-                      ./images/team3@2x.jpg 2x,
-                      ./images/team3.webp   1x
-                    "
-                    media="(min-width:1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team3t.jpg    1x,
-                      ./images/team3t@2x.jpg 2x,
-                      ./images/team3t.webp   1x
-                    "
-                    media="(min-width:768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team3m.jpg    1x,
-                      ./images/team3m@2x.jpg 2x,
-                      ./images/team3m.webp   1x
-                    "
-                    media="(min-width:480px)"
-                    type="image/webp"
-                  />
-                  <img src="./images/team3m.jpg" alt="Первый член команды" />
-                </picture>
+                <img
+                  srcset="
+                    ./images/team3.jpg     270w,
+                    ./images/team3@2x.jpg  540w,
+                    ./images/team3t.jpg    354w,
+                    ./images/team3t@2x.jpg 708w,
+                    ./images/team3m.jpg    450w,
+                    ./images/team3m@2x.jpg 900w
+                  "
+                  src="./images/team3m.jpg"
+                  alt="Третий член команды"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <div class="team__content">
                   <h3 class="team__title">Николай Тарасов</h3>
                   <p class="team__text">Marketing</p>
@@ -443,36 +393,19 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/team4.jpg    1x,
-                      ./images/team4@2x.jpg 2x,
-                      ./images/team4.webp   1x
-                    "
-                    media="(min-width:1200px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team4t.jpg    1x,
-                      ./images/team4t@2x.jpg 2x,
-                      ./images/team4t.webp   1x
-                    "
-                    media="(min-width:768px)"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/team4m.jpg    1x,
-                      ./images/team4m@2x.jpg 2x,
-                      ./images/team4m.webp   1x
-                    "
-                    media="(min-width:480px)"
-                    type="image/webp"
-                  />
-                  <img src="./images/team4m.jpg" alt="Первый член команды" />
-                </picture>
+                <img
+                  srcset="
+                    ./images/team4.jpg     270w,
+                    ./images/team4@2x.jpg  540w,
+                    ./images/team4t.jpg    354w,
+                    ./images/team4t@2x.jpg 708w,
+                    ./images/team4m.jpg    450w,
+                    ./images/team4m@2x.jpg 900w
+                  "
+                  src="./images/team4m.jpg"
+                  alt="Четвертый член команды"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
                 <div class="team__content">
                   <h3 class="team__title">Михаил Ермаков</h3>
                   <p class="team__text">UI Designer</p>

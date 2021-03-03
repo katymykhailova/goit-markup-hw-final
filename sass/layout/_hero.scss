@@ -2,7 +2,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
   min-height: 400px;
-  max-width: 480px;
+  // max-width: 480px;
   margin: 0 auto;
   background-color: #C4C4C4;
   background-image: linear-gradient(to right, $gradient-color, $gradient-color), url('../images/bg_hero_mobile.jpg');
@@ -20,13 +20,10 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
     background-image: linear-gradient(to right, $gradient-color, $gradient-color), url('../images/bg_hero_tablet.jpg');
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/bg_hero_tablet@2x.jpg');}
-    
   }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/bg_hero_tablet@2x.jpg');}
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -34,11 +31,11 @@
     min-height: 600px;
     max-width: 1600px;
     background-image: linear-gradient(to right, $gradient-color, $gradient-color), url('../images/bg_hero.jpg'); 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/bg_hero@2x.jpg');}
+    
   }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/bg_hero@2x.jpg');}
   
 }
 
@@ -62,6 +59,7 @@
 .hero__button {
   @extend %button;
 
-  &:hover {
+  &:hover, &:focus {
+    background-color: #188CE8;
     cursor: pointer;}
 }
