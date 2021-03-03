@@ -933,7 +933,7 @@ img {
           transform: translateY(0);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 390px) {
   .project__meta {
     font-size: 14px;
   }
