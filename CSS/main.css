@@ -704,6 +704,10 @@ img {
   max-width: 200px;
 }
 
+.form-sign__btn:hover, .form-sign__btn:focus {
+  background-color: #188CE8;
+}
+
 @media screen and (max-width: 1199px) {
   .form-sign__btn {
     margin: 0 auto;
