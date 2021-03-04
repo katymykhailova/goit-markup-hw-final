@@ -1460,6 +1460,7 @@ img {
           transform: translateY(-50%);
   width: 18px;
   height: 18px;
+  fill: #212121;
 }
 
 .form-modal__input:focus + .form-modal__icon {

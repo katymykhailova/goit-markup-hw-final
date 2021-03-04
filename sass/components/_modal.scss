@@ -107,6 +107,7 @@
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+  fill: $title-text-color;
 
   .form-modal__input:focus + & {
     fill: $accent-color;}
