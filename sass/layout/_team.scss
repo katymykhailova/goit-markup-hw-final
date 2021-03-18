@@ -27,6 +27,23 @@
 
   @media screen and (max-width: 767px) {
     max-width: 450px;}
+
+    
+}
+
+.team__imgthumb {
+  height: 460px;
+  overflow: hidden;
+  
+  @media screen and (min-width: 768px) {
+    height: 374px;}
+
+  @media screen and (min-width: 1200px) {
+    height: 260px;}
+}
+
+.team__img {
+  object-fit: cover;
 }
 
 .team__content {
