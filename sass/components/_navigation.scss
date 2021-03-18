@@ -1,10 +1,48 @@
-.site-nav {
-  @extend %list;
+.menu-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+
+.header__nav {
+  flex-grow: 1;
+  display: flex;
+}
+
+.js-open-menu {
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  height: 40px;
+  z-index: 1001;
 
   @media screen and (min-width: 768px) {
-    display: flex;}
+    display: none;}
+  
+}
 
-  @media screen and (min-width: 481px) and (max-width: 1199px) {
+.icon-menu:hover,  .icon-cross:hover {
+  @extend %icon;
+  fill: $accent-color;
+}
+
+
+.site-nav {
+  @extend %list;
+  
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
     flex-grow: 1;
     justify-content: center;}
     
@@ -16,11 +54,10 @@
 .site-nav__link {
   @extend %nav-link;
   @extend %link;
+  
   position: relative;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 32px;
-    padding-bottom: 32px;}
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   &:hover,
   &:focus {
@@ -29,38 +66,21 @@
   &--current {
     color: $accent-color;}
 
-  @media screen and (min-width: 768px) {
-      &--current::after {
-      left: 0;
-      position: absolute;
-      bottom: -1px;
-      content: '';
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $accent-color;}}
+  
+  &--current::after {
+    left: 0;
+    position: absolute;
+    bottom: -1px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;}
 
 }
 
 .site-nav__item {
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;}
-
   &:not(:last-child) {
-    @media screen and (min-width: 768px) {
-      margin-right: 50px;}}
-}
-
-.header__icon-cross{
-  display: none;
-}
-
-.header__button.is-open .header__icon-cross{
-  display: block;
-}
-
-.header__button.is-open .header__icon-menu{
-  display: none;
+    margin-right: 50px;}
 }

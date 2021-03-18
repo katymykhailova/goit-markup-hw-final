@@ -1,11 +1,6 @@
 .contact-header  {
   @extend %list;
 
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 65px;}
-
   @media screen and (min-width: 1200px) {
     display: flex;}
 
@@ -13,10 +8,6 @@
 
 .contact-header__item:not(:last-child){
   
-  @media screen and (max-width: 767px) {
-    margin-top: 32px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-right: 50px;}
 
@@ -37,22 +28,12 @@
   &:hover, &:focus{
     color: $accent-color;}
 
-   @media screen and (max-width: 767px) {
-    .contact-header__item:last-child > & {
-      color: $accent-color;}
-    .contact-header__item:first-child > & {
-      font-size: 24px;
-      line-height: 1.17;
-      letter-spacing: 0.02em;}}
-
 }
 
 .contact-header__icon {
   @extend %icon;
   margin-right: 8px;
 
-  @media screen and (max-width: 767px) {
-    display: none;}   
 }
 
 .contact-footer {
