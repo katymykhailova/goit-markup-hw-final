@@ -14,7 +14,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/bg_hero_mobile@2x.jpg');}
+    background-image: linear-gradient(to right, $gradient-color, $gradient-color), url('../images/bg_hero_mobile@2x.jpg');}
 
 
   @media screen and (min-width: 768px) {
@@ -23,7 +23,7 @@
   }
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/bg_hero_tablet@2x.jpg');}
+    background-image: linear-gradient(to right, $gradient-color, $gradient-color), url('../images/bg_hero_tablet@2x.jpg');}
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -35,7 +35,7 @@
   }
 
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/bg_hero@2x.jpg');}
+    background-image: linear-gradient(to right, $gradient-color, $gradient-color), url('../images/bg_hero@2x.jpg');}
   
 }
 
