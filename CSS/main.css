@@ -445,6 +445,7 @@ img {
 }
 
 .team__img {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
