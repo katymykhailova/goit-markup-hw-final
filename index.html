@@ -546,7 +546,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="form-modal" method="POST">
+        <form class="form-modal" method="POST" id="ajax_form">
           <b class="form-modal__caption"
             >Оставьте свои данные, мы вам перезвоним</b
           >
@@ -618,7 +618,9 @@
               <a class="form-modal__link" href="">Условия договора</a>
             </label>
           </div>
-          <button type="submit" class="form-modal__btn">Отправить</button>
+          <button type="submit" class="form-modal__btn" id="btn">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
@@ -683,6 +685,7 @@
       </ul>
     </div>
 
+    <div id="result_form"></div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script
