@@ -9,7 +9,7 @@ $phone = $_POST['user_tel'];
 $comment = $_POST['user-comment'];
  
 //в переменную $token нужно вставить токен, который нам прислал @botFather
-$token = "540741194:AAEaaI2C3JEOmDILzIc_zrNSVXT2iS6guZM";
+$token = "1598750135:AAFd9Zox9__gN6YhfrmYDfA5WkPoV2sORnk";
  
 //нужна вставить chat_id (Как получить chad id, читайте ниже)
 $chat_id = "-417326617";
